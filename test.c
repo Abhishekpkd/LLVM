@@ -7,7 +7,7 @@ void loopInvariantExample(int n, int *array) {
     int c = a * b; // Loop-invariant computation
 
     for (int i = 0; i < n; ++i) {
-        array[i] = c + i; // `c * i` is not invariant, but `c` is
+        array[i] = c + i; // `c` is invariant
     }
 }
 
